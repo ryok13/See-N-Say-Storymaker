@@ -1,3 +1,4 @@
+/*Page base styles */
 body {
     font-family: sans-serif;
     background-color: #f9f9f9;
@@ -5,14 +6,14 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+/* Main layout: two columns side by side */
 .container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/* Left side: word/image columns */
 .left-page {
     display: flex;
     width: 50%;
@@ -50,7 +51,7 @@ body {
     font-size: 30px;
     margin-bottom: 10px;
 }
-
+/* Right side: control panel and character */
 .right-page {
     display: flex;
     flex-direction: column;
@@ -73,7 +74,6 @@ body {
     cursor: pointer;
 }
 
-/* 各色の指定 */
 .purple { background-color: #ba55d3; }
 .blue   { background-color: #00bfff; }
 .green  { background-color: #32cd32; }
@@ -109,7 +109,6 @@ body {
     margin: 0 10px;
 }
 
-/* 色分け */
 #surpriseBtn {
     background-color: #e53935;
 }
