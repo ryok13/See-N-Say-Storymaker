@@ -1,9 +1,22 @@
+body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .left-page {
     display: flex;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border: 5px solid #000;
+    width: 50%;
+    border: 5px solid #fff94d;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -29,7 +42,6 @@
     width: 40px;
     height: 40px;
     background-color: inherit;
-    /* color: #000; */
     border: 2px solid white;
     border-radius: 50%;
     text-align: center;
@@ -39,6 +51,74 @@
     margin-bottom: 10px;
 }
 
-img {
+.right-page {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff94d;
+}
 
+.color-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.color-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 各色の指定 */
+.purple { background-color: #ba55d3; }
+.blue   { background-color: #00bfff; }
+.green  { background-color: #32cd32; }
+.orange { background-color: #ffa500; }
+.pink   { background-color: #ff69b4; }
+
+.character-area {
+    margin: 150px 0;
+}
+
+.character-img {
+    display: inline-block;
+    width: 240px;
+    max-width: 100%;
+}
+
+
+.story-controls {
+    margin-top: auto;
+    text-align: center;
+
+}
+
+.msgButton {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+/* 色分け */
+#surpriseBtn {
+    background-color: #e53935;
+}
+
+#repeatBtn {
+    background-color: #1e88e5;
+}
+
+#storyOutput {
+    margin-top: 10px;
+    font-weight: bold;
 }
